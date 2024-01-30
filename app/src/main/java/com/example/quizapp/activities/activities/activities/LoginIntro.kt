@@ -1,4 +1,4 @@
-package com.example.quizapp
+package com.example.quizapp.activities.activities.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -28,8 +28,8 @@ class LoginIntro : AppCompatActivity() {
     }
     private fun redirect(name:String){
         val intent:Intent = when(name){
-            "LOGIN" -> Intent(this,LoginActivity::class.java)
-            "MAIN" -> Intent(this,MainActivity::class.java)
+            "LOGIN" -> Intent(this, LoginActivity::class.java)
+            "MAIN" -> Intent(this, MainActivity::class.java)
             else -> throw Exception("no path exists")
         }
         startActivity(intent)

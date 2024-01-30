@@ -1,4 +1,4 @@
-package com.example.quizapp
+package com.example.quizapp.activities.activities.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -21,7 +21,7 @@ class LoginActivity : AppCompatActivity() {
             login()
         }
         binding.btnSignUp.setOnClickListener {
-            val intent = Intent(this,SignupActivity::class.java)
+            val intent = Intent(this, SignupActivity::class.java)
             startActivity(intent)
             finish()
         }
@@ -40,7 +40,7 @@ class LoginActivity : AppCompatActivity() {
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
-                    val intent = Intent(this,MainActivity::class.java)
+                    val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
                     finish()
                 } else {

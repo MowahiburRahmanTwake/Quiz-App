@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <uses-feature android:name="android.permission.INTERNET"></uses-feature>
+
+    <uses-feature android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -14,35 +15,26 @@
         android:theme="@style/Theme.QuizApp"
         tools:targetApi="31">
         <activity
-            android:name=".LoginActivity"
+            android:name=".activities.activities.activities.QuestionActivity"
             android:exported="false" />
-
-
         <activity
-
-            android:name=".SignupActivity"
+            android:name=".activities.activities.activities.LoginActivity"
             android:exported="false" />
-
-
-
-
-
         <activity
-            android:name=".LoginIntro"
-            android:exported="true" >
+            android:name=".activities.activities.activities.SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.activities.activities.LoginIntro"
+            android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-
-
         <activity
-            android:name=".MainActivity"
-            android:exported="false"/>
-
-
+            android:name=".activities.activities.activities.MainActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
